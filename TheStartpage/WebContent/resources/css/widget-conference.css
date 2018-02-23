@@ -1,0 +1,36 @@
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.title{
+	font-weight:bold;
+	color:#405e79;
+	font-size:14px;
+}
+
+.info{
+	color:#697880;
+	font-size:13px;
+}
+
+div{
+	margin-bottom:10px;
+}
+

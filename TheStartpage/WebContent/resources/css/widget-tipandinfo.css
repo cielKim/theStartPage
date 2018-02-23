@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+:link, :visited{
+	text-decoration:none;
+	color:#697880;
+}
+
+td{
+	text-align:left;
+	font-size:12px;
+	border-bottom:1px solid #c7d1d6;
+}
+
+.tipandinfobutton {
+    background-color: #b1c1ce;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 3px 5px;
+}

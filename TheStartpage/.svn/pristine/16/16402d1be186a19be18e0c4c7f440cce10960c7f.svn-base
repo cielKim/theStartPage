@@ -1,0 +1,284 @@
+@charset "UTF-8";
+
+@font-face{
+	font-family:"10X10Bold";
+	src:url('../font/10X10Bold.ttf') format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face{
+	font-family:"10X10";
+	src:url('../font/10X10.ttf') format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+body {
+	background:#e9f2fb;
+	}
+	
+#config-wrapper{
+	padding:10%;
+	padding-left:25%;
+	}
+	
+#config {
+	position:relative;
+	float:right;
+	/* background:#08314a; */
+	background:url('/TheStartpage/resources/img/main/configbackground.png');
+	width:12%;
+	height:100%;
+	}
+	
+#config-title {
+	color:white;
+	padding-left:2px;
+	font-family: 'Permanent Marker', cursive;
+	margin-bottom:5px;
+	font-size:24px;
+	}
+	
+#config-title2 {
+	color:white;
+	padding-left:17px;
+	font-family:"10X10Bold";
+	}
+	
+#config-body {
+	color:white;
+	font-family:"10X10";
+	font-weight:300;
+	}
+#config-table td{
+	padding:3px 0;
+}	
+.grid-stack-item-content {
+	background:white;
+	box-shadow:2px 2px 15px #6d90a7;
+	border-radius:4px;
+	padding-left:5px;
+	padding-top:9px;
+	}
+	
+.widget_title{
+	font-weight:600;
+	font-size:17px;
+	font-family:"10X10";
+	color:#BFA186;
+	padding-left: 6px;
+}
+
+.widget_desc{
+	font-family:"10X10";
+	color:#697880;
+	padding-left: 5px;
+}
+
+.configButton, #weather-reset {
+    background-color: #b1c1ce;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 5px;
+    font-family: "10X10";
+    margin-left: 1px;
+
+}
+
+.itbookbest_table, .projectfinder_table, .twitter_table{
+	border:none;
+	color:#697880;
+	font-size: 13px;
+	margin-top: -3px;
+	padding-left:6px;
+}
+
+#weather-wrapper{
+	padding-left:3px;
+}
+
+.optionwrapper{
+	margin-top:10px;
+}
+/* config checkbox */
+.checkbox.custom {
+  float: left;
+  margin: 0;
+  margin-left:10px;
+  margin-top:2px;
+  padding: 0;
+  display: block;
+  width: 100%;
+}
+
+input[type="checkbox"].custom {
+  margin-left: 0;
+  padding: 0;
+}
+
+input[type=checkbox].css-checkbox {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0px;
+  border: 0;
+}
+
+input[type=checkbox].css-checkbox+label.css-label{
+  padding-left: 20px;
+  height: 20px;
+  display: inline-block;
+  line-height: 10px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  font-size: 15px;
+  vertical-align: middle;
+  cursor: pointer;
+  opacity: 1;
+}
+
+input[type=checkbox].css-checkbox+label.css-label:hover{
+/*   opacity: 0.5; */ /* 선택적 사용 */
+}
+
+input[type=checkbox].css-checkbox:checked+label.css-label{
+  background-position: 0 -20.6px;
+}
+
+.css-label {
+  background-image: url(/TheStartpage/resources/img/config/check5.png);
+  background-size:20px;
+}
+
+/* itbookbest/projectfinder/twitter option checkbox */
+.optionbox.optioncustom {
+  float: left;
+  margin: 0;
+  margin-left:20px;
+  margin-top:3px;
+  padding: 0;
+  display: block;
+  width: 100%;
+}
+
+input[type="checkbox"].optioncustom {
+  margin-left: 0;
+  padding: 0;
+}
+
+input[type="radio"].optioncustom {
+  margin-left: 0;
+  padding: 0;
+}
+
+input[type=checkbox].itbookbest-option, input[type=checkbox].projectfinder-option {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0px;
+  border: 0;
+}
+
+input[type=radio].twitter-option {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0px;
+  border: 0;
+}
+
+input[type=checkbox].itbookbest-option+label.css-optionlabel, input[type=checkbox].projectfinder-option+label.css-optionlabel{
+  padding-left: 20px;
+  height: 14px;
+  display: inline-block;
+  line-height: 10px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  font-size: 15px;
+  vertical-align: middle;
+  cursor: pointer;
+  opacity: 1;
+}
+
+ input[type=radio].twitter-option+label.css-optionlabel{
+  padding-left: 20px;
+  height: 14px;
+  display: inline-block;
+  line-height: 10px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  font-size: 15px;
+  vertical-align: middle;
+  cursor: pointer;
+  opacity: 1;
+}
+
+input[type=checkbox].itbookbest-option+label.css-optionlabel:hover{
+	opacity: 0.5; /* 선택적 사용 */
+}
+
+input[type=checkbox].projectfinder-option+label.css-optionlabel:hover{
+	opacity: 0.5; /* 선택적 사용 */
+}
+
+input[type=radio].twitter-option+label.css-optionlabel:hover{
+	opacity: 0.5; /* 선택적 사용 */
+}
+
+input[type=checkbox].itbookbest-option:checked+label.css-optionlabel{
+  background-position: 0 -14px;
+}
+
+input[type=checkbox].projectfinder-option:checked+label.css-optionlabel{
+  background-position: 0 -14px;
+}
+
+input[type=radio].twitter-option:checked+label.css-optionlabel{
+  background-position: 0 -14px;
+}
+
+.css-optionlabel {
+  background-image: url(/TheStartpage/resources/img/config/check6.png);
+  background-size:14px;
+}
+
+
+
+/* 셀렉트박스 */
+select{
+	border: none;
+	border-bottom: 1px solid #c7d1d6;
+	height: 20px;
+	color: #697880;
+}
+
+hr{
+	width:98%;
+	float:left;
+	border:0.5px solid #c7d1d6;
+}
+
+hr#config-line{
+	float:left;
+	border:0.5px solid #bfa186;
+	margin-left:-10px;
+}
+
+#configIcon{
+	width:180px;
+	margin-top:150px;
+	margin-left:32px;
+}

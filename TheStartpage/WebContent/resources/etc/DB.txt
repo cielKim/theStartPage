@@ -1,0 +1,60 @@
+//mysql -u [������] -p [��й�ȣ]
+mysql -u root -p (�����ݷ� ���� ����)
+��й�ȣ 1234 ����
+
+//mysql ���ӵ�
+show databases; // �����ͺ��̽� ������
+
+// mysql �����ͺ��̽� ���
+use mysql
+
+select host, user from user;
+// �ƹ� �͵� �� ���� ����
+
+// ���� �����
+create user 'jhl'@'localhost' identified by '1234';
+// create user 'jhl'@'%' identified by '1234'; // ���ݿ�
+grant all privileges on *.* to 'jhl'@'localhost' identified by '1234'; // ��� �����ͺ��̽�.��� ���̺�
+// grant all privileges on *.* to 'jhl'@'%' identified by '1234'; // �������� ���� �����ϰ�
+flush privileges;
+
+// ������Ʈ���� hr/hr�� �Ǿ� ����
+
+// devproject �����ͺ��̽� ������ֱ�
+create database devproject;
+
+// devproject ���
+use devproject;
+
+create table itbookbest(
+	category varchar(30),
+	title varchar(50),	
+	bookisbn13 int(30),
+	imgSrc varchar(100),
+	author varchar(50),
+	publicationdate varchar(30),
+	primary key(bookisbn13)
+);
+
+create table member(
+	email varchar(100),
+	password varchar(100),
+	primary key(email)
+);
+
+create table member_widget(
+	email varchar(100),
+	widgetParams varchar(255),
+	foreign key(email) references member(email)
+);
+
+create table news(
+	title varchar(100),
+	href varchar(100),
+	type varchar(30) not null
+);
+
+create table weather(
+	addr varchar(100),
+	addrid varchar(100)
+);

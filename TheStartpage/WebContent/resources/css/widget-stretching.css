@@ -1,0 +1,18 @@
+		div{
+		width: 300px;
+		}
+		button{
+			border:1px solid white;
+			color: white;
+			width: 73px;
+			height:40px;
+			float:left;
+			text-align: center;
+			background-color: #B1C1CE;
+		}
+		video{
+			margin-top:8px;
+			width: 292px;
+			
+		}
+

@@ -1,0 +1,25 @@
+th{
+	text-align:left;
+	font-size:14px;
+	font-weight:bold;
+	color:#405e79;
+}
+td{
+	text-align:left;
+	font-size:14px;
+	color:#405e79;
+}
+
+.timerbutton {
+    background-color: #b1c1ce;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 3px 5px;
+}
+
+hr{
+    border: 0.5px solid #c7d1d6;
+}
